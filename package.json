@@ -8,6 +8,7 @@
     "dev": "concurrently npm:dev:*",
     "build": "tsc",
     "start:server": "node ./dist/index.js",
+    "populate": "node ./dist/populate.js",
     "start:worker": "node ./dist/index-worker.js",
     "start": "concurrently npm:start:*",
     "migration:generate": "ts-node migration generate",
