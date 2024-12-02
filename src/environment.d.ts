@@ -24,6 +24,8 @@ declare global {
       SMTP_PASSWORD: string;
       SMTP_HOST: string;
       SMTP_PORT: number;
+      PRIVY_APP_ID: string;
+      PRIVY_APP_SECRET:string
     }
   }
 }

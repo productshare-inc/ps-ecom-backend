@@ -17,9 +17,11 @@
     "stripe": "stripe listen --forward-to localhost:3000/payments/stripe"
   },
   "dependencies": {
+    "@apollo/client": "^3.11.10",
     "@aws-sdk/client-s3": "^3.478.0",
     "@aws-sdk/credential-providers": "^3.668.0",
     "@aws-sdk/lib-storage": "^3.478.0",
+    "@privy-io/server-auth": "^1.16.6",
     "@vendure/admin-ui-plugin": "2.1.4",
     "@vendure/asset-server-plugin": "2.1.4",
     "@vendure/core": "2.1.4",
