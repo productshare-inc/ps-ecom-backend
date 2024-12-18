@@ -4,7 +4,7 @@ export const apiOptions: VendureConfig["apiOptions"] = {
   port: 3000,
   adminApiPath: "admin-api",
   shopApiPath: "shop-api",
-  ...(process.env.APP_ENV === "dev"
+  ...(process.env.APP_ENV === "production"
     ? {
         adminApiPlayground: {
           settings: { "request.credentials": "include" },
