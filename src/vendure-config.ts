@@ -23,6 +23,7 @@ import {
   RequestContext,
   TransactionalConnection,
 } from "@vendure/core";
+import { customFields } from "./config/custom_fields";
 
 class OrderStrategy implements ActiveOrderStrategy {
   readonly name = "active-order-strategy";
@@ -82,7 +83,7 @@ export const config: VendureConfig = {
   apiOptions,
   authOptions,
   dbConnectionOptions,
-  customFields: {},
+  customFields,
   plugins,
   orderOptions: {
     activeOrderStrategy: new OrderStrategy(),
