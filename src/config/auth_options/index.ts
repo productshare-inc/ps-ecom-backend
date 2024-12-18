@@ -14,7 +14,7 @@ export const authOptions: VendureConfig["authOptions"] = {
     secret: COOKIE_SECRET,
     ...(process.env.APP_ENV === "dev"
       ? {}
-      : { domain: ".aexol.com", sameSite: "lax" }),
+      : { domain: ".productshare.net", sameSite: "lax" }),
   },
   shopAuthenticationStrategy:[
     new PrivyAuthenticationStrategy(process.env.PRIVY_APP_ID, process.env.PRIVY_APP_SECRET)

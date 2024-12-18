@@ -9,7 +9,7 @@ export const dbConnectionOptions: VendureConfig["dbConnectionOptions"] = {
   type: "postgres",
   // See the README.md "Migrations" section for an explanation of
   // the `synchronize` and `migrations` options.
-  synchronize: false,
+  synchronize: true,
   migrations: [path.join(__dirname, "../../migrations/*.+(js|ts)")],
   logging: false,
   database: DB_NAME,

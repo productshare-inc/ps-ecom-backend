@@ -7,4 +7,4 @@ RUN npm install --production
 RUN npm install -g concurrently
 COPY . .
 RUN npm run build
-CMD ["sh", "-c", "npm run start"]
+CMD ["sh", "-c", "npm run migration:run && npm run populate && npm run start"]
