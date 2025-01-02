@@ -12,11 +12,13 @@ export const authOptions: VendureConfig["authOptions"] = {
   },
   cookieOptions: {
     secret: COOKIE_SECRET,
-    ...(process.env.APP_ENV === "dev"
-      ? {}
-      : { domain: ".productshare.net", sameSite: "lax" }),
+    httpOnly: true,
+    secure: process.env.APP_ENV !== "dev", // Use Secure only in production
+    domain: process.env.APP_ENV === "dev" ? undefined : ".productshare.net",
+    path: "/",
+    sameSite: process.env.APP_ENV === "dev" ? "lax" : "none", // Use 'lax' for development
   },
-  shopAuthenticationStrategy:[
-    new PrivyAuthenticationStrategy(process.env.PRIVY_APP_ID, process.env.PRIVY_APP_SECRET)
-  ]
+  shopAuthenticationStrategy: [
+    new PrivyAuthenticationStrategy(process.env.PRIVY_APP_ID, process.env.PRIVY_APP_SECRET),
+  ],
 };
