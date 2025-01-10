@@ -14,7 +14,7 @@ export const authOptions: VendureConfig["authOptions"] = {
     secret: COOKIE_SECRET,
     ...(process.env.APP_ENV === "dev"
       ? {}
-      : { domain: ".productshare.net", sameSite: "lax", secure: true }),
+      : { domain: ".productshare.net", sameSite: "lax"}),
   
   },
   shopAuthenticationStrategy: [
