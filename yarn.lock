@@ -3187,6 +3187,13 @@
   resolved "https://registry.npmjs.org/@one-ini/wasm/-/wasm-0.1.1.tgz"
   integrity sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==
 
+"@pinelab/vendure-plugin-coinbase@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/@pinelab/vendure-plugin-coinbase/-/vendure-plugin-coinbase-1.3.0.tgz"
+  integrity sha512-4gEnIsbbQj6WCS6UA1lUZkI5tF3nwfkjjHZWCAWs/FeNMG7UwfJ8dCq5fbJHZI2S7qozShOBN3rF04Gs+CdSdA==
+  dependencies:
+    axios "^0.26.1"
+
 "@pkgjs/parseargs@^0.11.0":
   version "0.11.0"
   resolved "https://registry.npmjs.org/@pkgjs/parseargs/-/parseargs-0.11.0.tgz"
@@ -4665,10 +4672,10 @@
     mjml "^4.14.1"
     nodemailer "^6.9.4"
 
-"@vendure/payments-plugin@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.npmjs.org/@vendure/payments-plugin/-/payments-plugin-2.1.5.tgz"
-  integrity sha512-LdTjZkbTaUgtjfiVXCgydZSSgcM47D3piQzNSSSK9YUI+WM6zCgNOKExPWmHyGOyka1w1NJABeu2lmf5ie+qpg==
+"@vendure/payments-plugin@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/@vendure/payments-plugin/-/payments-plugin-2.3.3.tgz"
+  integrity sha512-1lDWrY2LgVEyyImODpvuH/RRZ9ujAflIt3UW39cPgzXIJ0Teqnp/4lyJAwhH1D37S8eoJ2nYUUCyy76gioBIdg==
   dependencies:
     currency.js "2.0.4"
 
@@ -5181,6 +5188,13 @@ autoprefixer@10.4.14:
     normalize-range "^0.1.2"
     picocolors "^1.0.0"
     postcss-value-parser "^4.2.0"
+
+axios@^0.26.1:
+  version "0.26.1"
+  resolved "https://registry.npmjs.org/axios/-/axios-0.26.1.tgz"
+  integrity sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==
+  dependencies:
+    follow-redirects "^1.14.8"
 
 b4a@^1.6.4:
   version "1.6.4"
@@ -6983,7 +6997,7 @@ find-up@^6.3.0:
     locate-path "^7.1.0"
     path-exists "^5.0.0"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.14.8:
   version "1.15.3"
   resolved "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.3.tgz"
   integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==

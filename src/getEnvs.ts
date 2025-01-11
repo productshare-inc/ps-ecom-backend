@@ -17,6 +17,12 @@ const envs = [
   "SMTP_PASSWORD",
   "SMTP_HOST",
   "SMTP_PORT",
+  "COINBASE_API_KEY",
+  "PRIVY_APP_SECRET",
+  "PRIVY_APP_ID",
+  "AWS_REGION",
+  "AWS_ACCESS_KEY_ID",
+  "AWS_SECRET_ACCESS_KEY",
 ] as const;
 
 export const getEnvs = () => {
@@ -24,8 +30,11 @@ export const getEnvs = () => {
   if (missingEnvs.length) {
     throw new Error(`Missing environment variables: ${missingEnvs.join(", ")}`);
   }
-  return envs.reduce((acc, env) => {
-    acc[env as (typeof envs)[number]] = `${process.env[env]}`;
-    return acc;
-  }, {} as Record<(typeof envs)[number], string>);
+  return envs.reduce(
+    (acc, env) => {
+      acc[env as (typeof envs)[number]] = `${process.env[env]}`;
+      return acc;
+    },
+    {} as Record<(typeof envs)[number], string>,
+  );
 };
