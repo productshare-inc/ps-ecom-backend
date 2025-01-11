@@ -6,3 +6,10 @@ static/assets
 static/email/test-emails
 .env
 .env.example
+/.idea/aws.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/codeStyles/Project.xml
+/.idea/ps-ecom-backend.iml
+/.idea/vcs.xml
